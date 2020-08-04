@@ -1,0 +1,85 @@
+{
+  "version": 2,
+
+  "functions": {
+    "api/dk.js": {
+      "includeFiles": "public/*"
+    }
+  },
+
+  "routes": [
+
+    {
+      "src": "/(.*)",
+      "headers": {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+        "Access-Control-Allow-Headers": "Accept, Authorization, Cache-Control, Content-Type, DNT, If-Modified-Since, Keep-Alive, Origin, User-Agent, X-Requested-With, Token, x-access-token"
+      },
+      "continue": true
+    },
+
+    {
+      "src": "/badge/(.*)",
+      "dest": "/api/badge.js",
+      "continue": true
+    },
+
+    {
+      "src": "/captcha(.*)",
+      "dest": "/api/captcha.js",
+      "continue": true
+    },
+
+    {
+      "src": "/clock(.*)",
+      "dest": "/api/clock.js",
+      "continue": true
+    },
+
+    {
+      "src": "/http(.*)",
+      "dest": "/api/cors.js",
+      "continue": true
+    },
+    {
+      "src": "/cors(.*)",
+      "dest": "/api/cors.js",
+      "continue": true
+    },
+
+    {
+      "src": "/DK/(.*)",
+      "dest": "/api/dk.js",
+      "continue": true
+    },
+    {
+      "src": "/dk/(.*)",
+      "dest": "/api/dk.js",
+      "continue": true
+    },
+
+    {
+      "src": "/ip",
+      "dest": "/api/ip.js",
+      "continue": true
+    },
+
+    {
+      "src": "/svg(.*)",
+      "dest": "/api/svg.js",
+      "continue": true
+    },
+
+    {
+      "src": "/uuid(.*)",
+      "dest": "/api/uuid.js",
+      "continue": true
+    },
+
+    {
+      "src": "/swagger",
+      "dest": "/index.html"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "name": "netnr-vercel-serverless",
+  "description": "Vercel Serverless",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "netnr",
+  "license": "MIT",
+  "dependencies": {
+    "pg": "^8.3.0",
+    "mssql": "^6.2.0",
+    "mysql": "^2.18.1",
+    "oracledb": "4.2.0",
+    "follow-redirects": "^1.12.1",
+    "svg-captcha": "^1.4.0",
+    "uuid": "^8.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/netnr/serverless.git"
+  },
+  "keywords": [
+    "netnr",
+    "vercel",
+    "serverless",
+    "api"
+  ],
+  "bugs": {
+    "url": "https://github.com/netnr/serverless/issues"
+  },
+  "homepage": "https://github.com/netnr/serverless#readme"
+}
