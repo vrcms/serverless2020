@@ -19,7 +19,7 @@ module.exports = (req, res) => {
             res.json({ code: 200 });
         } else {
             // 保留的头部键
-            let keephd = ['user-agent', 'accept', 'accept-encoding', 'cache-control', 'cookie', 'content-type', 'referer', 'token', 'authorization','user_token'],
+            let keephd = ['user-agent', 'accept', 'accept-encoding', 'cache-control', 'cookie', 'content-type', 'referer', 'token', 'authorization','user-token'],
                 headeryes = (req.headers["headeryes"] || "").split(','),
                 //不保留的头部键
                 headerno = (req.headers["headerno"] || "").split(',');
@@ -33,7 +33,7 @@ module.exports = (req, res) => {
                     ops.headers[i] = req.headers[i];
                 }
                 
-                if(i.toLowerCase() == 'user_token' && req.headers[i]=='123456'){
+                if(i.toLowerCase() == 'user-token' && req.headers[i]=='123456'){
                     cango = true;
                 }
             }
